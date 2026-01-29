@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background{
+  background-image: url('images/backgroundimage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}.header-container{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+
+}
+.title-logo{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 90px;
+  height: auto;
+  margin-right: -28px;
+  mix-blend-mode: multiply;
+}
+.title{
+  font-family: arial;
+  color: green;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+.header1 {
+  font-family: arial;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.header1 a {
+  color: brown;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.header1 a:hover {
+  text-decoration: underline;
+  color: darkgreen;
+}
+.hero-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.button-title{
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+.title1{
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 32px;
+  font-style: oblique;
+  font-weight: 600;
+  color: brown;
+}
+.explanation{
+  font-family: 'Poppins', Arial, sans-serif;
+  font-style: oblique;
+  font-size: 18px;
+  color: green;
+  margin-top: -10px;
+}
+.request-button{
+  background-color: darkorange;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-container{
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.whatsapp-image{
+  width: 30px;
+  height: auto;
+  margin-right: 8px;
+  mix-blend-mode: multiply;
+}
+.whatsapp-button{
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}.image{
+  max-width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  mix-blend-mode: multiply;
+
+
+}
+.image img{
+  width: 400px;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.howitworks,
+.request-errand,
+.contact-us
+{
+  font-family: arial;
+  font-size: 25px;
+  font-weight: 600;
+  font-style: oblique;
+  color: brown;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+
+}
+.steps-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 40px 0;
+}
+.step1-image,
+.step2-image,
+.step3-image{
+  width: 180px;
+  height: auto;
+  margin-bottom: 8px;
+  mix-blend-mode: multiply;
+}
+.tell-us,
+.will-get,
+.quick-affordable{
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  font-style: oblique;
+  font-size: 22px;
+  font-weight: 600;
+  color: green;
+}.let-us,
+.confirm-request,
+.will-deliver{
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  font-style: oblique;
+  font-weight: 600;
+  color: brown; 
+}
+.errand-form{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 15px;
+}
+.name,
+.phone-number,
+.errand-details,
+.delivery-time
+{
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.submit-button{
+  background-color: darkorange;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+} 
+.call-logo img,
+.email-address img,
+.whatsapp img{
+  width: 40px;
+  height: auto;
+  margin-right: 8px;
+  mix-blend-mode: multiply;
+}
+.contact-options{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 50px;
+  margin: 40px 0;
+}
+.contact-options a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: darkgreen;
+  font-weight: 600;
+}
+
+.contact-options a img {
+  width: 40px;
+  height: auto;
+  margin-right: 8px;
+}
+.love{
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+}
+.copy-right{
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+  margin-top: 10px;
+}
+

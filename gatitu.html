@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gatitu - Court errands runner</title>
+    <link rel="stylesheet" href="gatitu.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="green">
+  </head>
+  <body>
+  <div class="background">
+
+     <div class="header-container">
+    <div class="title-logo">
+       <img class="logo" src="images/logo.png">
+      <h1 class="title">Court errands runner</h1>
+    </div>
+    <nav class="header1">
+      <a href="#home">Home</a>
+      <a href="#howItWorks">How it works</a>
+      <a href="#requestErrand">Request an Errand</a>
+      <a href="#contactUs">Contact Us</a>
+    </nav>
+   </div>
+
+   <div id="home" class="hero-container">
+    <div class="button-title">
+      <p class="title1">Too tired or busy to go out?</p>
+      <p class="explanation">We will help you get meals, groceries, picking up laundry and household items fast and easy!</p>
+      
+      <div class="button-container">
+        <button class="request-button" id="requestButton">Request an Errand</button>
+        <button class="whatsapp-button" id="whatsappButton">
+          <img class="whatsapp-image" src="images/whatsapp-logo.png">
+          <span>chat on Whatsapp</span>
+        </button>
+      </div>
+    </div>
+  
+    <div class="image">
+      <img src="images/image.png">
+    </div>
+   </div>
+
+   <div>
+      <h3 id="howItWorks" class="howitworks">How It Works</h3>
+    </div>
+
+    <div class="steps-container">
+      <div class="step1">
+        <img class="step1-image" src="images/submitrequest-image.png">
+        <p class="tell-us">1. Tell us what you need</p>
+        <p class="let-us">Let us know what you need and we will take care of it for you.</p>
+
+      </div>
+      <div class="step2">
+        <img class="step2-image" src="images/onit-image.png">
+        <p class="will-get">2. We will go get it</p>
+        <p class="confirm-request">We will confirm and accept your errand request.</p>
+      </div>
+      <div class="step3">
+        <img class="step3-image" src="images/delivering-image.png">
+        <p class="quick-affordable">3. Quick and affordable</p>
+        <p class="will-deliver">We will deliver your items quickly and affordably.</p>
+    </div>
+    </div>
+
+    <div>
+      <h3 id="requestErrand" class="request-errand">Request an Errand</h3>
+    </div>
+
+    <div class="errand-form" id="errandForm">
+      <input type="text" class="name" placeholder="Your Name">
+      <input type="text" class="phone-number" placeholder="Your Phone Number">
+      <input type="text" class="errand-details" placeholder="What do you need?">
+      <input type="text" class="delivery-time" placeholder="Preferred Delivery Time">
+
+      <button class="submit-button" id="submitButton">Submit Request</button>
+
+      <h3 id="contactUs" class="contact-us">Got Questions? Contact Us</h3>
+     <div class="contact-options">
+
+       <a href="tel:0708875610" class="call-logo"><img src="images/call-logo.jpeg">
+        <span>Call 0708875610</span>
+      </a>
+
+      <a href="https://wa.me/254708875610?text=Hello%20Dottie,%20I%20have%20a%20question." target="_blank" class="whatsapp"><img src="images/whatsapp-logo.png">
+        <span>Chat on WhatsApp</span>
+      </a>
+
+      <a href="mailto:dorocheps98@gmail.com?subject=Court%20Errand%20Inquiry&body=Hello,%20I%20have%20a%20question%20about%20your%20services." class="email-address"><img src="images/email-logo.png">
+        <span>Email dorocheps98@gmail.com</span>
+      </a>
+
+     </div>
+
+     <p class="love">Reliable, Fast and Friendly Services in your Court &#10084;&#65039;</p>
+     <p class="copy-right">&#169; 2026 court-errands</p>
+    </div>
+  </div>
+
+  <script src="./gatitu.js"></script>
+
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('Service Worker registered:', reg))
+        .catch(err => console.log('Service Worker registration failed:', err));
+    });
+  }
+</script>
+
+</body>
+</html>
